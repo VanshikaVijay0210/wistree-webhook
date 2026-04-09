@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import fetch from 'node-fetch';
 
-const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_URL = process.env.SUPABASE_URL || 'https://aqfpknemptjzfvxoiytk.supabase.co';
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
 
 export async function saveStoryToWisTree({ from, audioUrl, transcript }) {
