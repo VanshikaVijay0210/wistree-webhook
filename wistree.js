@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 import fetch from 'node-fetch';
 
-const SUPABASE_URL = process.env.SUPABASE_URL || 'https://aqfpknemptjzfvxoiytk.supabase.co';
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
+const SUPABASE_URL = 'https://aqfpknemptjzfvxoiytk.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFxZnBrbmVtcHRqemZ2eG9peXRrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzA5NzQzNywiZXhwIjoyMDg4NjczNDM3fQ.5vP9Jn1Wz4vy8gBBwM1pGH-W7s9A2wxzlTEca0HcpwA';
 
 export async function saveStoryToWisTree({ from, audioUrl, transcript }) {
   const story = {
